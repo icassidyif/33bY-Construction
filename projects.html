@@ -24,9 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="media/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="media/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="media/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body data-sd-map-api="AIzaSyBkPajfNaB9_YtMqjuNOEMbmLt3EN9vVHA">
     <div class="wrapper">
         <div class="preloader" id="preloader">
             <div class="preloader__body">
@@ -225,15 +226,15 @@
                         <div data-aos="fade-up">
                             <nav class="projects-tabs-header" data-aos="decoration">
                                 <div class="page-title projects-tabs-header-title">
-                                    <ul class="projects-tabs-header-controls reset-list" role="tablist">
-                                        <li role="presentation">
-                                            <button class="projects-tabs-header-item active reset-button tabs-toggle" id="architecture-tab" type="button" data-sd-toggle="tab" data-sd-target="#architecture-tab-pane" role="tab" aria-controls="architecture-tab-pane" aria-selected="true">Архітектура</button>
+                                    <ul class="projects-tabs-header-controls reset-list">
+                                        <li>
+                                            <a class="projects-tabs-header-item active" href="#">Архітектура</a>
                                         </li>
-                                        <li role="presentation">
-                                            <button class="projects-tabs-header-item reset-button tabs-toggle" id="interior-tab" type="button" data-sd-toggle="tab" data-sd-target="#interior-tab-pane" role="tab" aria-controls="interior-tab-pane" aria-selected="false">Інтер’єри</button>
+                                        <li>
+                                            <a class="projects-tabs-header-item" href="#">Інтер’єри</a>
                                         </li>
-                                        <li role="presentation">
-                                            <button class="projects-tabs-header-item reset-button tabs-toggle" id="commerce-tab" type="button" data-sd-toggle="tab" data-sd-target="#commerce-tab-pane" role="tab" aria-controls="commerce-tab-pane" aria-selected="false">Комерція</button>
+                                        <li>
+                                            <a class="projects-tabs-header-item" href="#">Інтер’єри</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -244,7 +245,7 @@
                             </nav>
                         </div>
                         <div class="tabs-content">
-                            <div class="projects-grid tabs-pane active" id="architecture-tab-pane" role="tabpanel" aria-labelledby="architecture-tab" tabindex="0">
+                            <div class="projects-grid tabs-pane active">
                                 <div data-aos="fade-up">
                                     <div class="projects-item" data-aos="decoration">
                                         <a class="projects-item-img" href="single.html">
@@ -346,7 +347,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="projects-grid tabs-pane" id="interior-tab-pane" role="tabpanel" aria-labelledby="interior-tab" tabindex="0">
+                            <div class="projects-grid tabs-pane">
                                 <div data-aos="fade-up">
                                     <div class="projects-item" data-aos="decoration">
                                         <a class="projects-item-img" href="single.html">
@@ -448,7 +449,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="projects-grid tabs-pane" id="commerce-tab-pane" role="tabpanel" aria-labelledby="commerce-tab" tabindex="0">
+                            <div class="projects-grid tabs-pane">
                                 <div data-aos="fade-up">
                                     <div class="projects-item" data-aos="decoration">
                                         <a class="projects-item-img" href="single.html">
@@ -747,7 +748,7 @@
         </div>
     </div>
     <script src="js/manageForms.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCspMg9VzAGgftPlo9CI28BNi_xhcQeJOs&amp;callback=initMap" async defer></script>
+    <script src="js/vendor.js" async defer></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

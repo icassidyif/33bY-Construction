@@ -24,9 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="media/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="media/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="media/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body data-sd-map-api="AIzaSyBkPajfNaB9_YtMqjuNOEMbmLt3EN9vVHA">
     <div class="wrapper">
         <div class="preloader" id="preloader">
             <div class="preloader__body">
@@ -523,7 +524,7 @@
         </div>
     </div>
     <script src="js/manageForms.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCspMg9VzAGgftPlo9CI28BNi_xhcQeJOs&amp;callback=initMap" async defer></script>
+    <script src="js/vendor.js" async defer></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
